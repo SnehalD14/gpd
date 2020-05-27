@@ -59,7 +59,7 @@ Other Parameters:
 
 Below is a visualization of the convention that GPD uses for the grasp pose (position and orientation) of a grasp. The grasp position is indicated by the orange cross and the orientation by the colored arrows.
 
-<img src="readme/hand_frame.png" alt="" width="30%" border="0" />
+<img src="images/hand_frame.png" alt="" width="30%" border="0" />
 
 ## References
 
@@ -67,3 +67,4 @@ Andreas ten Pas, Marcus Gualtieri, Kate Saenko, and Robert Platt. [**Grasp
 Pose Detection in Point Clouds**](http://arxiv.org/abs/1706.09911). The
 International Journal of Robotics Research, Vol 36, Issue 13-14, pp. 1455-1473.
 October 2017.
+
