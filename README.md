@@ -45,8 +45,8 @@ You can optionally install GPD with `sudo make install` so that it can be used b
 Brief explanations of parameters are given in *cfg/eigen_params.cfg*.
 
 Two important parameter to improve number of grasps found are 
-1. *workspace* - defines the volume of space in which to search for grasps as a cuboid of dimensions [minX, maxX, minY, maxY, minZ, maxZ], centered at the origin of the point cloud frame. Set it as small as possible
-2. *num_samples* - number of samples that are drawn from the point cloud to
+1. **workspace** - defines the volume of space in which to search for grasps as a cuboid of dimensions [minX, maxX, minY, maxY, minZ, maxZ], centered at the origin of the point cloud frame. Set it as small as possible
+2. **num_samples** - number of samples that are drawn from the point cloud to
 detect grasps. Set it as large as possible.
 
 ## Grasp Frame
