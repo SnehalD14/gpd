@@ -40,35 +40,20 @@ installed, you should be good to go.
 
 You can optionally install GPD with `sudo make install` so that it can be used by other projects as a shared library.
 
+## Parameters
 
-## Generate Grasps for a Point Cloud File
+Brief explanations of parameters are given in *cfg/eigen_params.cfg*.
 
-Run GPD on an point cloud file (PCD or PLY):
+Two important parameter to improve number of grasps found are 
+1)*workspace* - defines the volume of space in which to search for grasps as a cuboid of dimensions [minX, maxX, minY, maxY, minZ, maxZ], centered at the origin of the point cloud frame. Set it as small as possible
+2)*num_samples* - number of samples that are drawn from the point cloud to
+detect grasps. Set it as large as possible.
 
-   ```
-   ./detect_grasps ../cfg/eigen_params.cfg ../tutorials/krylon.pcd
-   ```
-
-The output should look similar to the screenshot shown below. The window is the PCL viewer. You can press [q] to close the window and [h] to see a list of other commands.
-
-<img src="readme/file.png" alt="" width="30%" border="0" />
+## Grasp Frame
 
 Below is a visualization of the convention that GPD uses for the grasp pose (position and orientation) of a grasp. The grasp position is indicated by the orange cross and the orientation by the colored arrows.
 
 <img src="readme/hand_frame.png" alt="" width="30%" border="0" />
-
-<a name="parameters"></a>
-## 4) Parameters
-
-Brief explanations of parameters are given in *cfg/eigen_params.cfg*.
-
-The two parameters that you typically want to play with to improve on the
-number of grasps found are *workspace* and *num_samples*. The first defines the
-volume of space in which to search for grasps as a cuboid of dimensions [minX,
-maxX, minY, maxY, minZ, maxZ], centered at the origin of the point cloud frame.
-The second is the number of samples that are drawn from the point cloud to
-detect grasps. You should set the workspace as small as possible and the number
-of samples as large as possible.
 
 ## References
 
