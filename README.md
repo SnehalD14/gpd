@@ -42,12 +42,18 @@ You can optionally install GPD with `sudo make install` so that it can be used b
 
 ## Parameters
 
-Brief explanations of parameters are given in *cfg/eigen_params.cfg*.
+The parameter values in *cfg/eigen_params.cfg* have to be altered according to your requirement. Always build package again after making changes to this file.
 
-Two important parameter to improve number of grasps found are 
+Two important parameter to improve number of grasps are:
 1. **workspace** - Defines the volume of space in which to search for grasps as a cuboid of dimensions [minX, maxX, minY, maxY, minZ, maxZ], centered at the origin of the point cloud frame. Set it as small as possible
 2. **num_samples** - Number of samples that are drawn from the point cloud to
 detect grasps. Set it as large as possible.
+
+Other Parameters:
+1. **Camera Position** - Modify based on your setup. 
+2. **Robot Hand Geometry** - Values depend on Robotic Gripper selection. We have fined set values for the Panda Gripper
+3. **Min and Max Aperture** - Gripper width between fingers
+4. **Filtering based on approach direction** - Turn on/off and set approach direction based on requirement.
 
 ## Grasp Frame
 
