@@ -1,45 +1,11 @@
 # Grasp Pose Detection (GPD)
 
-* [Author's website](http://www.ccs.neu.edu/home/atp/)
-* [License](https://github.com/atenpas/gpd/blob/master/LICENSE.md)
-* [ROS wrapper](https://github.com/atenpas/gpd_ros/)
-
 Grasp Pose Detection (GPD) is a package to detect 6-DOF grasp poses (3-DOF
 position and 3-DOF orientation) for a 2-finger robot hand (e.g., a parallel
 jaw gripper) in 3D point clouds. GPD takes a point cloud as input and produces
 pose estimates of viable grasps as output. The main strengths of GPD are:
-- works for novel objects (no CAD models required for detection),
-- works in dense clutter, and
-- outputs 6-DOF grasp poses (enabling more than just top-down grasps).
 
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=kfe5bNt35ZI
-" target="_blank"><img src="readme/ur5_video.jpg"
-alt="UR5 demo" width="320" height="240" border="0" /></a>
-
-GPD consists of two main steps: sampling a large number of grasp candidates, and classifying these candidates as viable grasps or not.
-
-##### Example Input and Output
-<img src="readme/clutter.png" height=170px/>
-
-The reference for this package is:
-[Grasp Pose Detection in Point Clouds](http://arxiv.org/abs/1706.09911).
-
-## Table of Contents
-1. [Requirements](#requirements)
-1. [Installation](#install)
-1. [Generate Grasps for a Point Cloud File](#pcd)
-1. [Parameters](#parameters)
-1. [Views](#views)
-1. [Input Channels for Neural Network](#cnn_channels)
-1. [CNN Frameworks](#cnn_frameworks)
-1. [GPU Support With PCL](#pcl_gpu)
-1. [Network Training](#net_train)
-1. [Grasp Image](#descriptor)
-1. [References](#References)
-
-<a name="requirements"></a>
-## 1) Requirements
+## Requirements
 
 1. [PCL 1.9 or newer](http://pointclouds.org/)
 2. [Eigen 3.0 or newer](https://eigen.tuxfamily.org)
