@@ -27,8 +27,12 @@ installed, you should be good to go.
    ```
    git clone https://github.com/SnehalD14/gpd
    ```
+   
    Else clone the original repository
-
+    ```
+   git clone https://github.com/atenpas/gpd
+   ```
+   
 4. Build the package:
 
    ```
