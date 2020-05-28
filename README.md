@@ -28,6 +28,11 @@ installed, you should be good to go.
    ```
    git clone https://github.com/atenpas/gpd
    ```
+   if you intend to use the [panda simulation setup](https://github.com/SnehalD14/panda_simulation) then clone 
+      ```
+   git clone https://github.com/SnehalD14/gpd
+   ```
+   
 
 4. Build the package:
 
