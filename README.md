@@ -3,7 +3,7 @@
 Grasp Pose Detection (GPD) is a package to detect 6-DOF grasp poses (3-DOF
 position and 3-DOF orientation) for a 2-finger robot hand (e.g., a parallel
 jaw gripper) in 3D point clouds. GPD takes a point cloud as input and produces
-pose estimates of viable grasps as output. The main strengths of GPD are:
+pose estimates of viable grasps as output.
 
 ## Requirements
 
