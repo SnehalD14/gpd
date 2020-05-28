@@ -23,16 +23,11 @@ installed, you should be good to go.
 
 2. Install OpenCV 3.4 ([tutorial](https://www.python36.com/how-to-install-opencv340-on-ubuntu1604/)).
 
-3. Clone the repository into some folder:
-
+3. If you intend to use GPD on Panda Robot, clone the repository into some folder:
    ```
-   git clone https://github.com/atenpas/gpd
-   ```
-   if you intend to use the [panda simulation setup](https://github.com/SnehalD14/panda_simulation) then clone 
-      ```
    git clone https://github.com/SnehalD14/gpd
    ```
-   
+   Else clone the original repository
 
 4. Build the package:
 
